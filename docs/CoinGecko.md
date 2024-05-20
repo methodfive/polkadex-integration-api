@@ -3,7 +3,7 @@
 
 
 
-<p>This document outlines the Polkadex API endpoint details available for DEX integration.</p>
+<p>This document outlines the Polkadex integration API endpoint details.</p>
 
 
 # Table of contents
