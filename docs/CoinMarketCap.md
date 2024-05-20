@@ -1,9 +1,9 @@
 <a name="top"></a>
-# Polkadex Integration API v1.0.0
+# Polkadex Integration API (CoinMarketCap) v1.0.0
 
 
 
-<p>This document outlines the Polkadex integration API endpoint details.</p>
+<p>This document outlines the Polkadex integration API endpoint details for integration into CoinMarketCap.</p>
 
 
 # Table of contents

@@ -1,9 +1,9 @@
 <a name="top"></a>
-# Polkadex Integration API v1.0.0
+# Polkadex Integration API (CoinGecko) v1.0.0
 
 
 
-<p>This document outlines the Polkadex integration API endpoint details.</p>
+<p>This document outlines the Polkadex integration API endpoint details for integration into CoinGecko.</p>
 
 
 # Table of contents

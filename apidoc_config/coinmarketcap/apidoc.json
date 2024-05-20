@@ -1,0 +1,9 @@
+{
+  "name": "Polkadex Integration API (CoinMarketCap)",
+  "description": "",
+  "version": "1.0.0",
+  "url": "https://<polkadex-integration-URL>",
+  "header": {
+    "filename": "apidoc_header.md"
+  }
+}

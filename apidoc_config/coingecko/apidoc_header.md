@@ -1,0 +1,1 @@
+This document outlines the Polkadex integration API endpoint details for integration into CoinGecko.
