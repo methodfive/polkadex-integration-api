@@ -1,6 +1,6 @@
 ## polkadex-integration-api
 
-This project implements the Polkadex API endpoint necessary for integration into CoinMarketCap and CoinGecko.
+This project implements the Polkadex API endpoints necessary for integration into CoinMarketCap and CoinGecko.
 
 [Polkadex API Documentation for CoinGecko](docs/CoinGecko.md)
 

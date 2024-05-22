@@ -1,0 +1,26 @@
+{
+  "name": "polkadex-integration-api",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "private": true,
+  "license": "GPLV3",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "docs": "apidoc-markdown -c apidoc_config/coingecko/apidoc.json -i src/routes/coingecko -o docs/CoinGecko.md && apidoc-markdown -c apidoc_config/coinmarketcap/apidoc.json -i src/routes/coinmarketcap -o docs/CoinMarketCap.md",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "rm -rf build && mkdir build && zip -r build/polkadex-integration-api.zip package.json src node_modules"
+  },
+  "dependencies": {
+    "apidoc-markdown": "^7.3.2",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "moment": "^2.30.1",
+    "mysql2": "^3.9.7",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}
