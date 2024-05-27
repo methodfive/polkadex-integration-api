@@ -4,7 +4,7 @@ This project implements the Polkadex API endpoints necessary for integration int
 
 [Polkadex API Documentation for CoinGecko](docs/CoinGecko.md)
 
-[Polkadex API Documenation for CoinMarketCap](docs/CoinMarketCap.md)
+[Polkadex API Documentation for CoinMarketCap](docs/CoinMarketCap.md)
 
 ## Installation
 
