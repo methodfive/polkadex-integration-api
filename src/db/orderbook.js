@@ -1,5 +1,5 @@
 const {getConnection, queryAsyncWithRetries, releaseConnection} = require("./database");
-const {DB_RETRIES} = require("../constants");
+const {DB_RETRIES, MAX_TRADE_RESULTS, MAX_ORDERBOOK_RESULTS} = require("../constants");
 const {isEmpty, getMarketPairByTickerID} = require("../util");
 
 async function getOrderBook(transformer, market, depth)
@@ -13,6 +13,9 @@ async function getOrderBook(transformer, market, depth)
         connectionPool = await getConnection();
 
         let marketPair = getMarketPairByTickerID(market);
+
+        if(isEmpty(depth))
+            depth = MAX_ORDERBOOK_RESULTS;
 
         let updatedTS = await getOrderBookUpdateTS(connectionPool);
         let bids = await getOrderBookSide(connectionPool, marketPair.base, marketPair.quote, "Bid", depth);
