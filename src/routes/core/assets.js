@@ -9,6 +9,7 @@ const router = express.Router();
  * @apiName GetAssets
  * @apiGroup Core
  *
+ * @apiSuccess {Number} asset_id  Polkadex asset ID
  * @apiSuccess {Number} cmc_id  CoinMarketCap ID of the cryptocurrency
  * @apiSuccess {Number} coingecko_id  CoinGecko ID of the cryptocurrency
  *
