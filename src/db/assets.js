@@ -13,7 +13,7 @@ async function getAssets(transformer)
         
         await queryAsyncWithRetries(connectionPool,
             `
-select assets.symbol, assets.name, assets.real_name, assets.cmc_unified_id, assets_24h.* 
+select assets.symbol, assets.name, assets.real_name, assets.cmc_unified_id, assets.coingecko_id, assets_24h.* 
 from assets 
 join assets_24h on assets_24h.asset_id = assets.asset_id 
 order by tvl desc 

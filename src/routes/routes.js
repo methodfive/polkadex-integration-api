@@ -7,6 +7,7 @@ const cmcAssets = require('./coinmarketcap/assets');
 const cmcTicker = require('./coinmarketcap/ticker');
 const cmcOrderbook = require('./coinmarketcap/orderbook');
 const cmcTrades = require('./coinmarketcap/trades');
+const assets = require('./core/assets');
 
 const initializeRoutes = app => {
     app.use('/cg/v1/tickers', cgTickers);
@@ -18,6 +19,7 @@ const initializeRoutes = app => {
     app.use('/cmc/v1/ticker', cmcTicker);
     app.use('/cmc/v1/orderbook', cmcOrderbook);
     app.use('/cmc/v1/trades', cmcTrades);
+    app.use('/v1/assets', assets);
 
     //app.use(express.static('docs'));
 }
