@@ -1,7 +1,7 @@
 /* eslint-disable consistent-return */
 const express = require('express');
 const getAssets = require("../../db/assets");
-const transformAssets = require("../../transformers/  core/assets");
+const transformAssets = require("../../transformers/core/assets");
 const router = express.Router();
 
 /**
