@@ -7,7 +7,7 @@ const transformVolume = (item) => {
 
     return {
         stat_date: item.stat_date !== null ? moment.utc(item.stat_date).format("YYYY-MM-DD") : null,
-        volume_in_usd: item.volume,
+        volume_usd: item.volume,
     };
 };
 
