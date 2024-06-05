@@ -1,6 +1,6 @@
 /* eslint-disable consistent-return */
 const express = require('express');
-const getVolume24h = require("../../db/volume24h");
+const {getVolume24h} = require("../../db/volume");
 const router = express.Router();
 
 /**
@@ -8,7 +8,7 @@ const router = express.Router();
  * @apiName getVolume24
  * @apiGroup Core
  *
- * @apiSuccess {Number} volume_in_usd  Volume in USD
+ * @apiSuccess {Number} volume_usd  Volume in USD
  *
  */
 
