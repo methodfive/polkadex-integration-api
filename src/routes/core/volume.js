@@ -1,8 +1,6 @@
 /* eslint-disable consistent-return */
 const express = require('express');
-const getVolume24h = require("../../db/volume");
 const yup = require("yup");
-const {TICKER_REGEX, MAX_TRADE_RESULTS} = require("../../constants");
 const {getVolume} = require("../../db/volume");
 const moment = require("moment");
 const transformVolume = require("../../transformers/core/volume");
