@@ -10,6 +10,7 @@ const cmcTrades = require('./coinmarketcap/trades');
 const assets = require('./core/assets');
 const volume24h = require('./core/volume24h');
 const volume = require('./core/volume');
+const volumeRange = require('./core/volumeRange');
 
 const initializeRoutes = app => {
     app.use('/cg/v1/tickers', cgTickers);
@@ -25,6 +26,7 @@ const initializeRoutes = app => {
 
     app.use('/v1/assets', assets);
     app.use('/v1/volume24h', volume24h);
+    app.use('/v1/volumeByRange', volumeRange);
     app.use('/v1/volume', volume);
 
     //app.use(express.static('docs'));
